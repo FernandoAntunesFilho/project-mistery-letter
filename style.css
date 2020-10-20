@@ -1,22 +1,44 @@
-.newspaper {
-  background-color: antiquewhite;
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+}
+
+#titulo {
+  text-align: center;
+  margin-top: 60px;
+  font-family: serif;
+  font-size: 50px;
+  color: rgb(66, 31, 4);
+}
+
+.newspaper1 {
+  background-color: rgb(211, 128, 19);
   font-family: Times New Roman, Times, serif;
   font-weight: 700;
+  border: solid 1px;
+  border-radius: 10%;
+}
+
+.newspaper2 {
+  background-color: rgb(48, 124, 18);
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
+  border: solid 1px;
+  border-radius: 40%;
 }
 
 .magazine1 {
-  background-color: teal;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('images/rsz_1caderno1.png');  
+  font-family: 'Homemade Apple', cursive;
   font-weight: 900;
-  text-transform: uppercase;
+  border: solid 1px;
 }
 
 .magazine2 {
-  background-image: url('images/pink-pattern.png');
-  color: fuchsia;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('images/rsz_caderno2.png');  
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
+  border: solid 1px;
 }
 
 .medium {
@@ -48,4 +70,31 @@
 
 .skewright {
   transform: skewX(-10deg);
+}
+
+#body-containner {
+  margin-top: 80px;  
+  text-align: center;
+  padding: 20px;
+}
+
+#carta-gerada {
+  padding-top: 50px;
+}
+
+#carta-texto {
+  height: 30px;
+  font-size: larger;
+}
+
+#criar-carta {
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#rodape {
+  padding-top: 50px;
+  text-align: center;
+  color: rgb(66, 31, 4);
 }
