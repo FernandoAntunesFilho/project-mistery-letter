@@ -1,15 +1,14 @@
 const botaoGerar = document.getElementById('criar-carta');
 const paragrafo = document.getElementById('carta-gerada');
-const qtdPalavras = document.getElementById('carta-contador');
 const inputFrase = document.getElementById('carta-texto');
-const groupStyle = ['newspaper', 'magazine1', 'magazine2'];
+const groupStyle = ['newspaper1', 'newspaper2', 'magazine1', 'magazine2'];
 const groupSize = ['medium', 'big', 'reallybig'];
 const groupRotation = ['rotateleft', 'rotateright'];
 const groupSlop = ['skewleft', 'skewright'];
 
 const criaEstilo = () => {
   const estiloUnico = [];
-  estiloUnico.push(groupStyle[parseInt(((Math.random()) * 3), 0)]);
+  estiloUnico.push(groupStyle[parseInt(((Math.random()) * 4), 0)]);
   estiloUnico.push(groupSize[parseInt(((Math.random()) * 3), 0)]);
   estiloUnico.push(groupRotation[parseInt(((Math.random()) * 2), 0)]);
   estiloUnico.push(groupSlop[parseInt(((Math.random()) * 2), 0)]);
@@ -41,8 +40,7 @@ const montaCarta = (array) => {
   } else {
     paragrafo.innerText = 'Por favor, digite o conteúdo da carta.';
   }
-  addEventClickOnSpan();
-  qtdPalavras.innerText = document.querySelectorAll('span').length;
+  addEventClickOnSpan();  
 };
 
 botaoGerar.addEventListener('click', function () {
